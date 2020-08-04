@@ -1,0 +1,89 @@
+body {
+font-family: sans-serif;
+color: #333333;
+padding:4em 0 4em;
+}
+body,
+.wrapper {
+margin: 10px auto;
+/*max-width: 60em;*/
+}
+ 
+header, nav, nav a, main, section, footer {
+border-radius: 0px 0.5em 0.5em;
+border: 1px solid;
+padding: 10px;
+margin: 10px;
+}
+ 
+header {
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
+text-align:center;
+padding:10px;
+background: lightgrey;
+/*border-bottom: 1px solid #d5d5d5;*/
+}
+ 
+nav {
+    position: fixed;
+  padding-top: 10em;	
+
+font-size: 0.91em;
+float: left;
+width: 15em;
+padding: 0;
+background: lightskyblue;
+border-color: skyblue;
+}
+ 
+nav ul {
+padding: 0;
+}
+ 
+nav li {
+list-style: none;
+margin: 0;
+padding: 0.1em;
+}
+ 
+nav a {
+display: block;
+padding: 0.2em 10px;
+font-weight: bold;
+text-decoration: none;
+background-color: skyblue;
+color: #333;
+}
+ 
+nav ul a:hover,
+nav ul a:active  {
+color: #fffbf0;
+background-color: #dfac20;
+}
+
+main {
+display: block;
+background: lightblue;
+border-color: #8a9da8;
+margin-left: 15em;
+min-width: 16em; /* Mindestbreite (der Überschrift) verhindert Anzeigefehler in modernen Browsern */
+}
+ 
+footer {
+position:fixed;
+padding: 10px;
+margin-top: 10px;
+bottom:0;
+left: 0;
+right:0;
+background: lightgrey;
+border-color: grey;
+}
+ 
+footer p {
+float:right;
+margin: 0;
+}

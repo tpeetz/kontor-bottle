@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  db:
+    image: mongo
+    restart: always
+    volumes:
+      - db-data:/var/lib/mongo
+    networks:
+      - backend-network
+  
+  app:
+    build: app
+    restart: always
+    networks:
+      - backend-network
+      - frontend-network
+
+  web:
+    build: web
+    restart: always
+    ports:
+      - 80:80
+    networks:
+      - frontend-network
+volumes:
+  db-data:
+networks:
+  backend-network:
+  frontend-network:
